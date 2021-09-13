@@ -1,0 +1,42 @@
+.section {
+  padding: 5rem 0 2.5rem;
+  text-align: center;
+  position: relative;
+}
+.hero {
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    text-align: left;
+  }
+  .block {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translate(0, -50%);
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about .block {
+    left: auto;
+    right: 5rem;
+  }
+  .hero .text,.hero .title, .about .text, .info .text,.about .sub-title, .info .sub-title {
+    color: var(--sub-text-color);
+  }
+  .btn {
+    color: var(--sub-text-color);
+  }
+  .btn::before {
+    background-color: var(--sub-text-color);
+  }
+  .btn:hover span {
+    color: var(--main-text-color);
+  }
+}
